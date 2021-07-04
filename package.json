@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "node-html-parser": "^3.3.6"
   }
 }
