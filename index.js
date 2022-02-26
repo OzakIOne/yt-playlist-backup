@@ -21,7 +21,9 @@ const createLink = async () => {
 const downloadFile = () => {
   console.log(`Starting backup of ${YTPLAYLIST}`);
   const now = new Date();
-  const fileName = `${now.getDate()}_${now.getMonth() + 1}_${now.getFullYear()}.xls`;
+  const fileName = `${now.getFullYear()}_${
+    now.getMonth() + 1
+  }_${now.getDate()}.xls`;
   createLink().then((url) => {
     fetch(url)
       .then((x) => x.arrayBuffer())
